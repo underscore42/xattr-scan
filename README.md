@@ -2,7 +2,8 @@
 scan for the extended SMACK onlycap attributes, comparision tool. for debugging permission issues
 
 Had some startup issues on our reference platform (think embedded linux) which showed
-up as permission denied as soon as one of the subsystems started up. 
+up as permission denied as soon as one of the subsystems started up with SMACK onlycap
+policies being enforced.
 
 * Would only occur if the system was updated live versus a firmware update.
 * Live update goes through an update daemon that runs with "admin" label but massages to "_"
